@@ -39,9 +39,9 @@
                             Category
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Starter</a></li>
-                            <li><a class="dropdown-item" href="#">Main Course</a></li>
-                            <li><a class="dropdown-item" href="#">Dessert</a></li>
+                            <li><a class="dropdown-item" href="starter.html">Starter</a></li>
+                            <li><a class="dropdown-item" href="maincourse.html">Main Course</a></li>
+                            <li><a class="dropdown-item" href="desert.html">Dessert</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -52,23 +52,28 @@
             </div>
         </div>
     </nav>
+
+    <!-- <input type="checkbox" name="options[]" value="Politics" /> Politics<br />
+        <input type="checkbox" name="options[]" value="Movies" /> Movies<br />
+        <input type="checkbox" name="options[]" value="World " /> World<br /> -->
+
+
     <ul class="list-group">
         <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="s1">
-            <label class="form-check-label stretched-link" for="s1">First checkbox</label>
+            <input class="form-check-input me-1" type="checkbox" value="Paneer" id="s1" name="options[]">
+            <label class="form-check-label stretched-link" for="s1">Paneer</label>
         </li>
         <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="s2">
-            <label class="form-check-label stretched-link" for="s2">Second checkbox</label>
+            <input class="form-check-input me-1" type="checkbox" value="Tandoori Roti" id="s2" name="options[]">
+            <label class="form-check-label stretched-link" for="s2">Tandoori Roti</label>
         </li>
         <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="s3">
-            <label class="form-check-label stretched-link" for="s3">Third checkbox</label>
+            <input class="form-check-input me-1" type="checkbox" value="Daal Bhaat" id="s3" name="options[]">
+            <label class="form-check-label stretched-link" for="s3">Daal Bhaat</label>
         </li>
     </ul>
-
-
-
+    <input type="submit" value="Go!" />
+    </form>
 
 </body>
 <script src="script.js"></script>
