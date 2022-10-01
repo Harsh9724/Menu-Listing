@@ -10,15 +10,13 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
 
 function generatePDF() {
-    // Choose the element that our invoice is rendered in.
     const element = document.getElementById("invoice");
-    // Choose the element and save the PDF for our user.
     html2pdf().from(element).save();
 }
 </script>';
 echo '</head><body><h3><div id="invoice">';
 
-if ($starter == [] || $dessert == [] || $starter1 == [] || $starter2 == []) {
+if ($starter == []) {
     echo '<script>alert("Please select a starter and a dessert");</script>';
     echo '<script>window.location.href="index.html  ";</script>';
     // exit;
@@ -51,18 +49,28 @@ if ($starter == [] || $dessert == [] || $starter1 == [] || $starter2 == []) {
         } else {
             echo "<td>" . "&nbsp" . "</td>";
         }
+
         echo "<td>" . "&nbsp" . "&nbsp" . "&nbsp" . "&nbsp" . "</td>";
+
         if (count($dessert) > $i) {
             echo "<td>" . $dessert[$i] . "</td>";
+        } else {
+            echo "<td>" . "&nbsp" . "</td>";
         }
+
         echo "<td>" . "&nbsp" . "&nbsp" . "&nbsp" . "&nbsp" . "</td>";
+
         if (count($starter1) > $i) {
             echo "<td>" . $starter1[$i] . "</td>";
+        } else {
+            echo "<td>" . "&nbsp" . "</td>";
         }
+
         echo "<td>" . "&nbsp" . "&nbsp" . "&nbsp" . "&nbsp" . "</td>";
+
         if (count($starter2) > $i) {
             echo "<td>" . $starter2[$i] . "</td>";
-        } else if (count($starter2) == 0) {
+        } else {
             echo "<td>" . "&nbsp" . "</td>";
         }
         echo "</tr>";
