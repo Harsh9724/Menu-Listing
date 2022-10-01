@@ -1,0 +1,41 @@
+<?php
+if (isset($_REQUEST['submit']) && $_REQUEST['submit'] !== null) {
+    if (isset($_REQUEST['options'])) {
+        $options = $_REQUEST['options'];
+        $str = '';
+        for ($i = 0; $i < count($options); $i++) {
+            $str .= "Selected " . $options[$i];
+        }
+        echo $str;
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Testing
+    </title>
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <form method="get" name="form">
+        <input type="checkbox" name="options[]" value="Politics" />
+        Politics
+        <br />
+        <input type="checkbox" name="options[]" value="Movies" />
+        Movies
+        <br />
+        <input type="checkbox" name="options[]" value="World " />
+        World
+        <br />
+        <input type="submit" name="submit" value="Go" />
+    </form>
+    <script>
+    </script>
+</body>
+
+</html>

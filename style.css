@@ -1,0 +1,32 @@
+.category {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
+    /* background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 5px 5px 0;
+    padding: 3px 8px;
+    text-transform: uppercase; */
+}
+
+/* Path: style.css */
+/* Language: css */
+.blocks {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 5px 5px 0;
+    padding: 3px 8px;
+    text-transform: uppercase;
+}
