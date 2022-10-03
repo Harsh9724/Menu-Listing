@@ -43,115 +43,257 @@
     </nav>
 
 </div>
+<button id="select" onclick="show()" class="btn1">Submit</button>
+<button onclick="generatePDF()" class="btn1" style="width:180px">Download as PDF</button>
 <div class="main">
-    <div>
-        <p>
-            <a class="p-2 d-flex justify-content-center border-bottom" data-bs-toggle="collapse"
-                href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1"
-                style="text-decoration:none;color:black;">
-                Starter
-            </a>
-        </p>
-        <div class="collapse" id="collapseExample1">
-            <div class="d-flex justify-content-center">
 
+    <div class="cardBlock">
+        <div class="card123">
+            <div class="header">
+                <div class="img-box">
+                    <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path fill="rgba(66,193,110,1)"
+                            d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z">
+                        </path>
+                    </svg> -->
+                </div>
+                <h1 class="title">Starters
+                    <hr>
+                </h1>
+            </div>
+
+            <div class="content">
+                <p>
                 <ul class="list-group">
                     <li class="list-group-item border-0">
-                        <input class="form-check-input me-1 sitems" type="checkbox" value="Soup" id="s1"
+                        <input class="form-check-input me-1 sitems" type="checkbox" value="Soup" id="f1"
                             name="starter[]">
-                        <label class="form-check-label stretched-link" for="s1">Soup</label>
+                        <label class="form-check-label stretched-link" for="f1">Soup</label>
                     </li>
                     <li class="list-group-item border-0">
-                        <input class="form-check-input me-1 sitems" type="checkbox" value="Paneer Chilli" id="s2"
+                        <input class="form-check-input me-1 sitems" type="checkbox" value="Paneer Chilli" id="f2"
                             name="starter[]">
-                        <label class="form-check-label stretched-link" for="s2">Paneer Chilli</label>
+                        <label class="form-check-label stretched-link" for="f2">Paneer Chilli</label>
                     </li>
                     <li class="list-group-item border-0">
-                        <input class="form-check-input me-1 sitems" type="checkbox" value="Spring Roll" id="s3"
+                        <input class="form-check-input me-1 sitems" type="checkbox" value="Spring Roll" id="f3"
                             name="starter[]">
-                        <label class="form-check-label stretched-link" for="s3">Spring Roll</label>
+                        <label class="form-check-label stretched-link" for="f3">Spring Roll</label>
                     </li>
                 </ul>
+                </p>
             </div>
         </div>
-        <p>
-            <a class="p-2 d-flex justify-content-center  border-bottom" data-bs-toggle="collapse"
-                href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"
-                style="text-decoration:none;color:black;">
-                Dessert
-            </a>
-        </p>
-        <div class="collapse" id="collapseExample">
-            <div class="d-flex justify-content-center">
+        <div class="card123">
+            <div class="header">
+                <div class="img-box">
+                    <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path fill="rgba(66,193,110,1)"
+                            d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z">
+                        </path>
+                    </svg> -->
+                </div>
+                <h1 class="title">Starters
+                    <hr>
+                </h1>
+            </div>
 
+            <div class="content">
+                <p>
                 <ul class="list-group">
                     <li class="list-group-item border-0">
-                        <input class="form-check-input me-1 ditems" type="checkbox" value="Brownie" id="d1"
-                            name="dessert[]">
-                        <label class="form-check-label stretched-link" for="d1">Brownie</label>
+                        <input class="form-check-input me-1 sitems" type="checkbox" value="Soup" id="e1"
+                            name="starter[]">
+                        <label class="form-check-label stretched-link" for="e1">Soup</label>
                     </li>
                     <li class="list-group-item border-0">
-                        <input class="form-check-input me-1 ditems" type="checkbox" value="Pastry" id="d2"
-                            name="dessert[]">
-                        <label class="form-check-label stretched-link" for="d2">Pastry</label>
+                        <input class="form-check-input me-1 sitems" type="checkbox" value="Paneer Chilli" id="e2"
+                            name="starter[]">
+                        <label class="form-check-label stretched-link" for="e2">Paneer Chilli</label>
                     </li>
                     <li class="list-group-item border-0">
-                        <input class="form-check-input me-1 ditems" type="checkbox" value="Cake" id="d3"
-                            name="dessert[]">
-                        <label class="form-check-label stretched-link" for="d3">Cake</label>
+                        <input class="form-check-input me-1 sitems" type="checkbox" value="Spring Roll" id="e3"
+                            name="starter[]">
+                        <label class="form-check-label stretched-link" for="e3">Spring Roll</label>
                     </li>
                 </ul>
+                </p>
             </div>
         </div>
-        <p>
-            <a class="p-2 d-flex justify-content-center border-bottom" data-bs-toggle="collapse"
-                href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3"
-                style="text-decoration:none;color:black;">
-                Starter1
-            </a>
-        </p>
-        <div class="collapse" id="collapseExample3">
-            <div class="d-flex justify-content-center">
+        <div class="card123">
+            <div class="header">
+                <div class="img-box">
+                    <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path fill="rgba(66,193,110,1)"
+                            d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z">
+                        </path>
+                    </svg> -->
+                </div>
+                <h1 class="title">Starters
+                    <hr>
+                </h1>
+            </div>
 
+            <div class="content">
+                <p>
                 <ul class="list-group">
                     <li class="list-group-item border-0">
-                        <input class="form-check-input me-1 s1items" type="checkbox" value="Soup" id="m1"
-                            name="starter1[]">
-                        <label class="form-check-label stretched-link" for="m1">Soup</label>
+                        <input class="form-check-input me-1 sitems" type="checkbox" value="Soup" id="d1"
+                            name="starter[]">
+                        <label class="form-check-label stretched-link" for="d1">Soup</label>
                     </li>
                     <li class="list-group-item border-0">
-                        <input class="form-check-input me-1 s1items" type="checkbox" value="Paneer Chilli" id="m2"
-                            name="starter1[]">
-                        <label class="form-check-label stretched-link" for="m2">Paneer Chilli</label>
+                        <input class="form-check-input me-1 sitems" type="checkbox" value="Paneer Chilli" id="d2"
+                            name="starter[]">
+                        <label class="form-check-label stretched-link" for="d2">Paneer Chilli</label>
                     </li>
                     <li class="list-group-item border-0">
-                        <input class="form-check-input me-1 s1items" type="checkbox" value="Spring Roll" id="m3"
-                            name="starter1[]">
-                        <label class="form-check-label stretched-link" for="m3">Spring Roll</label>
+                        <input class="form-check-input me-1 sitems" type="checkbox" value="Spring Roll" id="d3"
+                            name="starter[]">
+                        <label class="form-check-label stretched-link" for="d3">Spring Roll</label>
                     </li>
                 </ul>
+                </p>
+            </div>
+        </div>
+        <div class="card123">
+            <div class="header">
+                <div class="img-box">
+                    <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path fill="rgba(66,193,110,1)"
+                            d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z">
+                        </path>
+                    </svg> -->
+                </div>
+                <h1 class="title">Starters
+                    <hr>
+                </h1>
+            </div>
+
+            <div class="content">
+                <p>
+                <ul class="list-group">
+                    <li class="list-group-item border-0">
+                        <input class="form-check-input me-1 sitems" type="checkbox" value="Soup" id="c1"
+                            name="starter[]">
+                        <label class="form-check-label stretched-link" for="c1">Soup</label>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <input class="form-check-input me-1 sitems" type="checkbox" value="Paneer Chilli" id="c2"
+                            name="starter[]">
+                        <label class="form-check-label stretched-link" for="c2">Paneer Chilli</label>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <input class="form-check-input me-1 sitems" type="checkbox" value="Spring Roll" id="c3"
+                            name="starter[]">
+                        <label class="form-check-label stretched-link" for="c3">Spring Roll</label>
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="card123">
+            <div class="header">
+                <div class="img-box">
+                    <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path fill="rgba(66,193,110,1)"
+                            d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z">
+                        </path>
+                    </svg> -->
+                </div>
+                <h1 class="title">Starters
+                    <hr>
+                </h1>
+            </div>
+
+            <div class="content">
+                <p>
+                <ul class="list-group">
+                    <li class="list-group-item border-0">
+                        <input class="form-check-input me-1 sitems" type="checkbox" value="Soup" id="b1"
+                            name="starter[]">
+                        <label class="form-check-label stretched-link" for="b1">Soup</label>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <input class="form-check-input me-1 sitems" type="checkbox" value="Paneer Chilli" id="b2"
+                            name="starter[]">
+                        <label class="form-check-label stretched-link" for="b2">Paneer Chilli</label>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <input class="form-check-input me-1 sitems" type="checkbox" value="Spring Roll" id="b3"
+                            name="starter[]">
+                        <label class="form-check-label stretched-link" for="b3">Spring Roll</label>
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="card123">
+            <div class="header">
+                <div class="img-box">
+                    <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path fill="rgba(66,193,110,1)"
+                            d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z">
+                        </path>
+                    </svg> -->
+                </div>
+                <h1 class="title">Starters
+                    <hr>
+                </h1>
+            </div>
+
+            <div class="content">
+                <p>
+                <ul class="list-group">
+                    <li class="list-group-item border-0">
+                        <input class="form-check-input me-1 sitems" type="checkbox" value="Soup" id="a1"
+                            name="starter[]">
+                        <label class="form-check-label stretched-link" for="a1">Soup</label>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <input class="form-check-input me-1 sitems" type="checkbox" value="Paneer Chilli" id="a2"
+                            name="starter[]">
+                        <label class="form-check-label stretched-link" for="a2">Paneer Chilli</label>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <input class="form-check-input me-1 sitems" type="checkbox" value="Spring Roll" id="a3"
+                            name="starter[]">
+                        <label class="form-check-label stretched-link" for="a3">Spring Roll</label>
+                    </li>
+                </ul>
+                </p>
             </div>
         </div>
 
-        <button id="select" onclick="show()" class="btn1">Submit</button>
-        <button onclick="generatePDF()" class="btn1" style="width:180px">Download as PDF</button>
     </div>
     <div class="grid2">
         <div class="grid-container" id="data" style="visibility: hidden;">
             <div class="grid-item" id="starter">
-                <h3>Starter</h3>
+                <h3>Starter
+                    <hr>
+                </h3>
                 <ol id="list1">
 
                 </ol>
             </div>
             <div class="grid-item" id="dessert">
-                <h3>Dessert</h3>
+                <h3>Dessert
+                    <hr>
+                </h3>
                 <ol id="list2">
 
                 </ol>
             </div>
             <div class="grid-item" id="starter1">
-                <h3>Starter1</h3>
+                <h3>Starter1
+                    <hr>
+                </h3>
                 <ol id="list3">
 
                 </ol>
