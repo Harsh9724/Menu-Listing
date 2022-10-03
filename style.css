@@ -24,7 +24,7 @@
     border-radius: 3px; */
     color: #333;
     font-size: 12px;
-    font-weight: 700; 
+    font-weight: 700;
     line-height: 1;
     margin: 0 5px 5px 0;
     padding: 3px 8px;
@@ -67,7 +67,7 @@
     border-radius: 100px;
     content: '';
     width: 0;
-    height: 300%;
+    height: 500%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -85,4 +85,18 @@
 .btn1:hover {
     border-radius: 100px;
     color: #111;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+    grid-column-gap: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 50px;
+    padding: 10px;
 }
