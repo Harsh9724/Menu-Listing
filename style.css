@@ -1,3 +1,7 @@
+body {
+    background-color: #666;
+}
+
 .category {
     width: 80%;
     display: grid;
@@ -74,6 +78,7 @@
 .card123:hover {
     height: 500px;
     background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
+    backdrop-filter: blur(10px);
 }
 
 .card123 .header {
