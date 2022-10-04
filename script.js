@@ -25,3 +25,7 @@ function show() {
 function generatePDF() {
     html2pdf().from(document.getElementById("data")).save();
 }
+
+function Clean(){
+    document.getElementById('data').innerHTML='';
+}
