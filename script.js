@@ -75,6 +75,15 @@ body.addEventListener("click", e => {
 });
 
 
+
+
+const btn2 = document.querySelector(".btn2");
+
+list.forEach((btn) => {
+    btn.addEventListener("click", show);
+});
+
 function show() {
-    document.getElementById('listitems').classList.toggle("show");
+    const starter = this.nextElementSibling.querySelector(".list");
+    starter.classList.toggle("show");
 }
