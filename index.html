@@ -5,315 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gopi Caterers </title>
+
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Gopi Caterers</title>
 </head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
-    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
-<script src="script.js"></script>
 
 <body>
 
-<div id="google_translate_element"></div>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen'></i>
+            <span class="logo navLogo"><a href="#">Gopi Caterers</a></span>
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-    <div hidden>
-        <nav class="navbar navbar-expand-lg bg-light">
-
-            <div class="container-fluid">
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <a class="navbar-brand" href="#">
-                    <img src="gopi.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                </a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">Gopi Caterers</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
                 </div>
+
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </div>
-        </nav>
 
-    </div>
-    <div class="main">
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-circle-half half'></i>
+                    <i class='bx bx-brightness bright'></i>
+                </div>
 
-        <div class="cardBlock">
-            <div class="card123">
-                <div class="header">
-                    <div class="img-box">
-                        <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="rgba(66,193,110,1)"
-                                d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z">
-                            </path>
-                        </svg> -->
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class='bx bx-x cancel'></i>
+                        <i class='bx bx-search search'></i>
                     </div>
-                    <h1 class="title">Starters
-                        <hr>
-                    </h1>
-                </div>
 
-                <div class="content">
-                    <p>
-                    <ul class="list-group">
-                        <li class="list-group-item border-0">
-                            <input class="form-check-input me-1 sitems" type="checkbox" value="Soup" id="f1"
-                                name="starter[]">
-                            <label class="form-check-label stretched-link" for="f1">Soup</label>
-                        </li>
-                        <li class="list-group-item border-0">
-                            <input class="form-check-input me-1 sitems" type="checkbox" value="Paneer Chilli" id="f2"
-                                name="starter[]">
-                            <label class="form-check-label stretched-link" for="f2">Paneer Chilli</label>
-                        </li>
-                        <li class="list-group-item border-0">
-                            <input class="form-check-input me-1 sitems" type="checkbox" value="Spring Roll" id="f3"
-                                name="starter[]">
-                            <label class="form-check-label stretched-link" for="f3">Spring Roll</label>
-                        </li>
-                    </ul>
-                    </p>
-                </div>
-            </div>
-            <div class="card123">
-                <div class="header">
-                    <div class="img-box">
-                        <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="rgba(66,193,110,1)"
-                                d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z">
-                            </path>
-                        </svg> -->
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
                     </div>
-                    <h1 class="title">Starters
-                        <hr>
-                    </h1>
-                </div>
-
-                <div class="content">
-                    <p>
-                    <ul class="list-group">
-                        <li class="list-group-item border-0">
-                            <input class="form-check-input me-1 sitems" type="checkbox" value="Soup" id="e1"
-                                name="starter[]">
-                            <label class="form-check-label stretched-link" for="e1">Soup</label>
-                        </li>
-                        <li class="list-group-item border-0">
-                            <input class="form-check-input me-1 sitems" type="checkbox" value="Paneer Chilli" id="e2"
-                                name="starter[]">
-                            <label class="form-check-label stretched-link" for="e2">Paneer Chilli</label>
-                        </li>
-                        <li class="list-group-item border-0">
-                            <input class="form-check-input me-1 sitems" type="checkbox" value="Spring Roll" id="e3"
-                                name="starter[]">
-                            <label class="form-check-label stretched-link" for="e3">Spring Roll</label>
-                        </li>
-                    </ul>
-                    </p>
-                </div>
-            </div>
-            <div class="card123">
-                <div class="header">
-                    <div class="img-box">
-                        <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="rgba(66,193,110,1)"
-                                d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z">
-                            </path>
-                        </svg> -->
-                    </div>
-                    <h1 class="title">Starters
-                        <hr>
-                    </h1>
-                </div>
-
-                <div class="content">
-                    <p>
-                    <ul class="list-group">
-                        <li class="list-group-item border-0">
-                            <input class="form-check-input me-1 sitems" type="checkbox" value="Soup" id="d1"
-                                name="starter[]">
-                            <label class="form-check-label stretched-link" for="d1">Soup</label>
-                        </li>
-                        <li class="list-group-item border-0">
-                            <input class="form-check-input me-1 sitems" type="checkbox" value="Paneer Chilli" id="d2"
-                                name="starter[]">
-                            <label class="form-check-label stretched-link" for="d2">Paneer Chilli</label>
-                        </li>
-                        <li class="list-group-item border-0">
-                            <input class="form-check-input me-1 sitems" type="checkbox" value="Spring Roll" id="d3"
-                                name="starter[]">
-                            <label class="form-check-label stretched-link" for="d3">Spring Roll</label>
-                        </li>
-                    </ul>
-                    </p>
-                </div>
-            </div>
-            <div class="card123">
-                <div class="header">
-                    <div class="img-box">
-                        <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="rgba(66,193,110,1)"
-                                d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z">
-                            </path>
-                        </svg> -->
-                    </div>
-                    <h1 class="title">Starters
-                        <hr>
-                    </h1>
-                </div>
-
-                <div class="content">
-                    <p>
-                    <ul class="list-group">
-                        <li class="list-group-item border-0">
-                            <input class="form-check-input me-1 sitems" type="checkbox" value="Soup" id="c1"
-                                name="starter[]">
-                            <label class="form-check-label stretched-link" for="c1">Soup</label>
-                        </li>
-                        <li class="list-group-item border-0">
-                            <input class="form-check-input me-1 sitems" type="checkbox" value="Paneer Chilli" id="c2"
-                                name="starter[]">
-                            <label class="form-check-label stretched-link" for="c2">Paneer Chilli</label>
-                        </li>
-                        <li class="list-group-item border-0">
-                            <input class="form-check-input me-1 sitems" type="checkbox" value="Spring Roll" id="c3"
-                                name="starter[]">
-                            <label class="form-check-label stretched-link" for="c3">Spring Roll</label>
-                        </li>
-                    </ul>
-                    </p>
-                </div>
-            </div>
-            <div class="card123">
-                <div class="header">
-                    <div class="img-box">
-                        <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="rgba(66,193,110,1)"
-                                d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z">
-                            </path>
-                        </svg> -->
-                    </div>
-                    <h1 class="title">Starters
-                        <hr>
-                    </h1>
-                </div>
-
-                <div class="content">
-                    <p>
-                    <ul class="list-group">
-                        <li class="list-group-item border-0">
-                            <input class="form-check-input me-1 sitems" type="checkbox" value="Soup" id="b1"
-                                name="starter[]">
-                            <label class="form-check-label stretched-link" for="b1">Soup</label>
-                        </li>
-                        <li class="list-group-item border-0">
-                            <input class="form-check-input me-1 sitems" type="checkbox" value="Paneer Chilli" id="b2"
-                                name="starter[]">
-                            <label class="form-check-label stretched-link" for="b2">Paneer Chilli</label>
-                        </li>
-                        <li class="list-group-item border-0">
-                            <input class="form-check-input me-1 sitems" type="checkbox" value="Spring Roll" id="b3"
-                                name="starter[]">
-                            <label class="form-check-label stretched-link" for="b3">Spring Roll</label>
-                        </li>
-                    </ul>
-                    </p>
-                </div>
-            </div>
-            <div class="card123">
-                <div class="header">
-                    <div class="img-box">
-                        <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path fill="rgba(66,193,110,1)"
-                                d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z">
-                            </path>
-                        </svg> -->
-                    </div>
-                    <h1 class="title">Starters
-                        <hr>
-                    </h1>
-                </div>
-
-                <div class="content">
-                    <p>
-                    <ul class="list-group">
-                        <li class="list-group-item border-0">
-                            <input class="form-check-input me-1 sitems" type="checkbox" value="Soup" id="a1"
-                                name="starter[]">
-                            <label class="form-check-label stretched-link" for="a1">Soup</label>
-                        </li>
-                        <li class="list-group-item border-0">
-                            <input class="form-check-input me-1 sitems" type="checkbox" value="Paneer Chilli" id="a2"
-                                name="starter[]">
-                            <label class="form-check-label stretched-link" for="a2">Paneer Chilli</label>
-                        </li>
-                        <li class="list-group-item border-0">
-                            <input class="form-check-input me-1 sitems" type="checkbox" value="Spring Roll" id="a3"
-                                name="starter[]">
-                            <label class="form-check-label stretched-link" for="a3">Spring Roll</label>
-                        </li>
-                    </ul>
-                    </p>
-                </div>
-            </div>
-
-        </div>
-        <div class="grid2">
-            <div class="grid-container" id="data" style="visibility: hidden;">
-                <div class="grid-item" id="starter">
-                    <h3>Starter
-                        <hr>
-                    </h3>
-                    <ol id="list1">
-
-                    </ol>
-                </div>
-                <div class="grid-item" id="dessert">
-                    <h3>Dessert
-                        <hr>
-                    </h3>
-                    <ol id="list2">
-
-                    </ol>
-                </div>
-                <div class="grid-item" id="starter1">
-                    <h3>Starter1
-                        <hr>
-                    </h3>
-                    <ol id="list3">
-
-                    </ol>
                 </div>
             </div>
         </div>
-    </div>
-        <button id="select" onclick="show()" class="btn1">Submit</button>
-        <button onclick="generatePDF()" class="btn1" style="width:180px">Download as PDF</button>
-        <button value="Clean" onClick="Clean()" class="btn1">Start Over</button>
+    </nav>
+
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
