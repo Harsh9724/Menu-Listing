@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    transition: all 0.4s ease;
+    /* transition: all 0.4s ease; */
     ;
 }
 
@@ -34,7 +34,7 @@ body.dark {
 }
 
 nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     height: 70px;
@@ -288,4 +288,19 @@ body.dark .search-field i {
         display: block;
         margin-top: 20px;
     }
+}
+
+.mtitle {
+    height: 100vh;
+    margin-top: 72px;
+    margin-right: 10rem;
+    background-color: #238b2d;
+}
+
+.starters {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
 }

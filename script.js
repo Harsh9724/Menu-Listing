@@ -71,3 +71,8 @@ body.addEventListener("click", e => {
         nav.classList.remove("active");
     }
 });
+
+
+function show() {
+    document.getElementById('listitems').classList.toggle("show");
+}
