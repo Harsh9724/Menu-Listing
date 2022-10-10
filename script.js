@@ -17,17 +17,19 @@ function show() {
     for (var checkbox of starter1) {
         document.getElementById('list3').innerHTML += '<li>' + checkbox.value + '</li>';
     }
-
     for (var checkbox of dessert) {
         document.getElementById('list2').innerHTML += '<li>' + checkbox.value + '</li>';
     }
 }
+
 function generatePDF() {
     html2pdf().from(document.getElementById("data")).save();
 }
 
 function Clean() {
     document.getElementById('data').innerHTML = '';
+    document.getElementById('data').style.visibility = 'hidden';
+
 }
 
 
