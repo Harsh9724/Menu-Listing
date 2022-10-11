@@ -330,7 +330,9 @@ body.dark .search-field i {
     background-color: #ffffff;
 }
 
-
+.data {
+    visibility: hidden;
+}
 
 body.dark .listname {
     color: rgb(217, 217, 217);

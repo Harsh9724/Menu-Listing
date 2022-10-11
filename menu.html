@@ -17,7 +17,6 @@
 
 <body>
 
-
     <nav>
         <div class="nav-bar">
 
@@ -89,21 +88,46 @@
             </ul>
         </div>
     </div>
-    <button id="btn123" onclick="sumbit()">Submit</button>
-    <div id="data">
-        <ul id="list1">
-            Hi
-        </ul>
-        <ul id="list2">
-            Hi
-        </ul>
+
+
+
+    <button id="btn1" type="button" onclick="sub()">Submit</button>
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Open Modal</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Modal Header</h2>
+            </div>
+            <div class="modal-body">
+                <div class="data" id="data">
+                    <h3>Starters</h3>
+                    <div id="list1">
+                    </div>
+                    <h3>Main Course</h3>
+                    <div id="list2">
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div>
+        </div>
+
     </div>
 
-    <script src="preview.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
-        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script.js"></script>
+
+
 </body>
+
+<script src="script.js"></script>
+<script src="preview.js"></script>
 
 </html>
