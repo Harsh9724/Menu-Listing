@@ -297,7 +297,7 @@ body.dark .search-field i {
 
 .listname {
     background-color: #eee;
-    color: #444;
+    color: rgb(69, 69, 69);
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -313,4 +313,13 @@ body.dark .search-field i {
     display: none;
     overflow: hidden;
     list-style-type: none;
+}
+
+body.dark .listname {
+    color: rgb(217, 217, 217);
+    background-color: #727272;
+}
+
+body.dark .itemlist {
+    background-color: #ababab;
 }
