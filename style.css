@@ -289,17 +289,28 @@ body.dark .search-field i {
     }
 }
 
-.mtitle {
-    height: 100vh;
-    margin-top: 72px;
-    margin-right: 10rem;
-    background-color: #238b2d;
+
+.show,
+.listname:hover {
+    background-color: rgb(197, 195, 195);
 }
 
-.starters {
-    visibility: hidden;
+.listname {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+
 }
 
-.show {
-    visibility: visible;
+.itemlist {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    list-style-type: none;
 }

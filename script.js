@@ -76,14 +76,17 @@ body.addEventListener("click", e => {
 
 
 
+var list = document.getElementsByClassName("listname");
+var i;
 
-const btn2 = document.querySelector(".btn2");
-
-list.forEach((btn) => {
-    btn.addEventListener("click", show);
-});
-
-function show() {
-    const starter = this.nextElementSibling.querySelector(".list");
-    starter.classList.toggle("show");
+for (i = 0; i < list.length; i++) {
+    list[i].addEventListener("click", function () {
+        this.classList.toggle("show");
+        var itemlist = this.nextElementSibling;
+        if (itemlist.style.display === "block") {
+            itemlist.style.display = "none";
+        } else {
+            itemlist.style.display = "block";
+        }
+    });
 }
