@@ -86,8 +86,12 @@
     padding: 2px 16px;
 }
 
-.modal-footer {
+.modal-footer button {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
 }

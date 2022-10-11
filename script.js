@@ -58,17 +58,13 @@ for (i = 0; i < list.length; i++) {
 }
 
 function sub() {
+
+    // Preview Box
     var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
     var btn = document.getElementById("myBtn");
-
-    // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal 
+    var clear = document.getElementById("btnclear");
     modal.style.display = "block";
-
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
@@ -82,13 +78,14 @@ function sub() {
         }
     }
 
+    //data fetching
     var starter = document.querySelectorAll('input[name="starter[]"]:checked');
     var main = document.querySelectorAll('input[name="main[]"]:checked');
 
+    document.getElementById('data').style.visibility = "visible";
+
     document.getElementById('list1').innerHTML = "";
     document.getElementById('list2').innerHTML = "";
-
-    document.getElementById('data').style.visibility = "visible";
 
     for (var checkbox of starter) {
         document.getElementById('list1').innerHTML += '<li>' + checkbox.value + '</li>';
@@ -96,4 +93,10 @@ function sub() {
     for (var checkbox of main) {
         document.getElementById('list2').innerHTML += '<li>' + checkbox.value + '</li>';
     }
+
+    clear.onclick = function () {
+        document.getElementById('list1').innerHTML = "";
+        document.getElementById('list2').innerHTML = "";
+    }
 }
+

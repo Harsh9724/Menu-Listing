@@ -342,3 +342,15 @@ body.dark .listname {
 body.dark .itemlist {
     background-color: #ababab;
 }
+
+/* Submit Button */
+
+.listsub {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin: 0.2rem;
+}
