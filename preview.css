@@ -65,7 +65,7 @@
 .close {
     color: white;
     float: right;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -77,9 +77,11 @@
 }
 
 .modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
+    padding: 8px 16px;
+    background-color: #238b2d;
     color: white;
+    font-size: 18px;
+    font-weight: 100;
 }
 
 .modal-body {
@@ -87,11 +89,10 @@
 }
 
 .modal-footer button {
-    padding: 2px 16px;
-    background-color: #5cb85c;
+    padding: 4px 10px;
+    background-color: #238b2d;
     color: white;
     border: none;
     cursor: pointer;
-    padding: 5px;
     margin: 5px;
 }
