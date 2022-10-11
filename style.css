@@ -290,10 +290,6 @@ body.dark .search-field i {
 }
 
 
-.show,
-.listname:hover {
-    background-color: rgb(197, 195, 195);
-}
 
 .listname {
     background-color: #eee;
@@ -305,15 +301,36 @@ body.dark .search-field i {
     text-align: left;
     outline: none;
     font-size: 15px;
+}
 
+.show,
+.listname:hover {
+    background-color: rgb(197, 195, 195);
+
+}
+
+.listname:after {
+    content: '\002B';
+    color: rgb(69, 69, 69);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.show::after {
+    content: "\2212";
 }
 
 .itemlist {
     padding: 0 18px;
-    display: none;
+    max-height: 0;
     overflow: hidden;
     list-style-type: none;
+    transition: max-height 0.2s ease-out;
+    background-color: #ffffff;
 }
+
+
 
 body.dark .listname {
     color: rgb(217, 217, 217);

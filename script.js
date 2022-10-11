@@ -1,5 +1,5 @@
 
-function show() {
+function submit() {
 
     var starter = document.querySelectorAll('input[name="starter[]"]:checked');
     var dessert = document.querySelectorAll('input[name="dessert[]"]:checked');
@@ -83,10 +83,11 @@ for (i = 0; i < list.length; i++) {
     list[i].addEventListener("click", function () {
         this.classList.toggle("show");
         var itemlist = this.nextElementSibling;
-        if (itemlist.style.display === "block") {
-            itemlist.style.display = "none";
+        if (itemlist.style.maxHeight) {
+            itemlist.style.maxHeight = null;
         } else {
-            itemlist.style.display = "block";
+            itemlist.style.maxHeight = itemlist.scrollHeight + "px";
         }
     });
 }
+
