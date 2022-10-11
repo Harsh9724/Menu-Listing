@@ -37,7 +37,7 @@ nav {
     position: sticky;
     top: 0;
     left: 0;
-    height: 70px;
+    height: 60px;
     width: 100%;
     background-color: var(--nav-color);
     z-index: 100;
@@ -63,14 +63,14 @@ nav .nav-bar {
 
 nav .nav-bar .sidebarOpen {
     color: var(--text-color);
-    font-size: 25px;
+    font-size: 18px;
     padding: 5px;
     cursor: pointer;
     display: none;
 }
 
 nav .nav-bar .logo a {
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 500;
     color: var(--text-color);
     text-decoration: none;
@@ -92,11 +92,11 @@ nav .nav-bar .logo a {
 
 .nav-links li a {
     position: relative;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     color: var(--text-color);
     text-decoration: none;
-    padding: 11px;
+    padding: 12px;
 }
 
 .nav-links li a::before {
@@ -136,7 +136,7 @@ nav .nav-bar .logo a {
 .searchToggle i {
     position: absolute;
     color: var(--text-color);
-    font-size: 22px;
+    font-size: 18px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -179,8 +179,8 @@ nav .nav-bar .logo a {
     position: absolute;
     bottom: -85px;
     right: 5px;
-    height: 50px;
-    width: 300px;
+    height: 40px;
+    width: 250px;
     display: flex;
     align-items: center;
     background-color: var(--nav-color);
@@ -244,6 +244,7 @@ body.dark .search-field i {
         display: block;
     }
 
+
     .menu {
         position: fixed;
         height: 100%;
@@ -254,6 +255,7 @@ body.dark .search-field i {
         background-color: var(--side-nav);
         z-index: 100;
         transition: all 0.4s ease;
+
     }
 
     nav.active .menu {
