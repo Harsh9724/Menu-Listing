@@ -10,11 +10,13 @@
 
 :root {
     --body-color: #9e8321;
-    --nav-color: #FED101;
-    --side-nav: #010718;
+    --nav-color: #d88209;
+    --side-nav: #c0692b;
     --text-color: rgb(255, 255, 255);
     --search-bar: #F2F2F2;
     --search-text: #010718;
+    --title-color: rgb(240, 181, 6);
+    --title-text: black;
 }
 
 /* body {
@@ -33,6 +35,8 @@ body.dark {
     --side-nav: #242526;
     --text-color: #CCC;
     --search-bar: #242526;
+    --title-color: #727272;
+    --title-text: #CCC;
 }
 
 
@@ -313,11 +317,11 @@ body.dark .search-field i {
 
 
 .listname {
-    background-color: rgb(205, 205, 205);
+    background-color: rgb(240, 181, 6);
     color: rgb(46, 46, 46);
     cursor: pointer;
     padding: 5px;
-    width: 83%;
+    width: 99%;
     border: none;
     text-align: left;
     outline: none;
@@ -327,7 +331,7 @@ body.dark .search-field i {
 
 .show,
 .listname:hover {
-    background-color: rgb(188, 188, 188);
+    background-color: rgb(247, 197, 32);
 
 }
 
@@ -350,7 +354,9 @@ body.dark .search-field i {
     overflow: hidden;
     list-style-type: none;
     transition: max-height 0.2s ease-out;
-    background-color: transparent;
+    background-color: #fce7cc;
+    width: 99%;
+    margin: 0.2em;
 }
 
 .data {
@@ -370,7 +376,7 @@ body.dark .itemlist {
 
 .listsub {
     padding: 2px 16px;
-    background-color: #D80924;
+    background-color: var(--nav-color);
     color: white;
     border: none;
     cursor: pointer;
@@ -388,4 +394,128 @@ body.dark .itemlist {
 .logo {
     position: relative;
     left: 0%;
+}
+
+.title-tr {
+    background-color: var(--title-color);
+    color: var(--title-text);
+    font-size: 18px;
+}
+
+
+/* Preview Css */
+
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 8px 16px;
+    background-color: var(--nav-color);
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-footer button {
+    padding: 4px 10px;
+    background-color: var(--nav-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+.person-count,
+.event-date {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+
+#data {
+    display: block;
+    width: max-content;
+    margin-left: 0em;
 }

@@ -66,6 +66,12 @@ function sub() {
     var clear = document.getElementById("btnclear");
     modal.style.display = "block";
 
+    var cno = document.getElementById("cno").value;
+    var date = document.getElementById("date").value;
+
+    document.getElementById("pcount").innerHTML = "People: " + cno;
+    document.getElementById("edate").innerHTML = "Date: " + date;
+
     // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
         modal.style.display = "none";
@@ -88,10 +94,10 @@ function sub() {
     document.getElementById('list2').innerHTML = "";
 
     for (var checkbox of starter) {
-        document.getElementById('list1').innerHTML += '<li>' + checkbox.value + '</li>';
+        document.getElementById('list1').innerHTML += '<dd>' + checkbox.value + '</dd>';
     }
     for (var checkbox of main) {
-        document.getElementById('list2').innerHTML += '<li>' + checkbox.value + '</li>';
+        document.getElementById('list2').innerHTML += '<dd>' + checkbox.value + '</dd>';
     }
 
     clear.onclick = function () {
