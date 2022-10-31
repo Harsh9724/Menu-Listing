@@ -4,7 +4,7 @@
     padding-left: 25px;
     margin-bottom: 5px;
     cursor: pointer;
-    font-size: 19px;
+    font-size: 17px;
 }
 
 /* Hide the default checkbox */
@@ -19,8 +19,8 @@ based on demand */
     top: 0;
     left: 0;
     margin-top: 4px;
-    height: 20px;
-    width: 20px;
+    height: 16px;
+    width: 16px;
     background-color: black;
     border-radius: 20px;
 }
@@ -55,12 +55,12 @@ shown when checkbox is checked */
 showing only two border to make it look
 like a tickmark */
 .main .geekmark:after {
-    left: 7px;
-    bottom: 5px;
+    left: 6px;
+    bottom: 4px;
     width: 3px;
-    height: 10px;
+    height: 8px;
     border: solid white;
-    border-width: 0 3px 3px 0;
+    border-width: 0 2px 2px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
