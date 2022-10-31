@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="preview.css">
+    <link rel="stylesheet" href="checkbox.css">
 
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>Menu</title>
@@ -66,8 +67,18 @@
                 Starters
             </button>
             <ul class="itemlist">
-                <li><input type="checkbox" name="starter[]" value="Paneer Chilli" id="paneerchilli">Paneer Chilli</li>
-                <li><input type="checkbox" name="starter[]" value="Dry Manchurian" id="DryManchurian">Dry Manchurian
+
+                <li>
+                    <label class="main">Paneer Chilli
+                        <input type="checkbox" name="starter[]" value="Paneer Chilli" id="paneerchilli">
+                        <span class="geekmark"></span>
+                    </label>
+                </li>
+                <li>
+                    <label class="main">Dry Manchurian
+                        <input type="checkbox" name="starter[]" value="Dry Manchurian" id="DryManchurian">
+                        <span class="geekmark"></span>
+                    </label>
                 </li>
                 <li><input type="checkbox" name="starter[]" value="Dhokla" id="Dhokla">Dhokla</li>
                 <li><input type="checkbox" name="starter[]" value="Soup" id="Soup">Soup</li>
