@@ -10,13 +10,13 @@
 
 :root {
     --body-color: #9e8321;
-    --nav-color: #d88209;
+    --nav-color: #3e5be1;
     --side-nav: #c0692b;
     --text-color: rgb(255, 255, 255);
     --search-bar: #F2F2F2;
     --search-text: #010718;
-    --title-color: rgb(240, 181, 6);
-    --title-text: black;
+    --title-color: #52b2bf;
+    --title-text: white;
 }
 
 /* body {
@@ -317,8 +317,8 @@ body.dark .search-field i {
 
 
 .listname {
-    background-color: rgb(240, 181, 6);
-    color: rgb(46, 46, 46);
+    background-color: #004c6d;
+    color: #ccc;
     cursor: pointer;
     padding: 5px;
     width: 99%;

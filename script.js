@@ -91,7 +91,7 @@ function sub() {
     document.getElementById('data').style.visibility = "visible";
 
     document.getElementById('list1').innerHTML = "";
-    document.getElementById('list2').innerHTML = "";
+    document.getElementById('list2').innerHTML = ""; 21
 
     for (var checkbox of starter) {
         document.getElementById('list1').innerHTML += '<dd>' + checkbox.value + '</dd>';

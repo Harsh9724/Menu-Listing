@@ -34,7 +34,7 @@ shown when checkbox is active */
 /* Specify the background color to be
 shown when checkbox is checked */
 .main input:checked~.geekmark {
-    background-color: rgb(255, 132, 0);
+    background-color: #98ff98;
 }
 
 /* Checkmark to be shown in checkbox */
